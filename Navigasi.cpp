@@ -45,6 +45,7 @@ void cari_rute(int titik_awal, int titik_tujuan)
 
             bool adajalur = (bobot != hubung);
             bool belumfinal = !dikunjungi[v];
+            bool lebihdekat = (jarakterpendek [lokasiterpilih] +bobot <jarakterpendek [v]);
 
             if (adajalur &&
                 belumfinal &&

@@ -1,4 +1,4 @@
-include <iostream>
+#include <iostream>
 using namespace std;
 
 const int jumlah_lokasi = 25;
@@ -7,13 +7,13 @@ const int hubung = 1;
 int jarak[ jumlah_lokasi + 1 ][ jumlah_lokasi + 1 ];
 std :: string nama_lokasi[jumlah_lokasi + 1];
 
-void set_nama_lokasi(int id, std::string nama_lokasi){
+void set_nama_lokasi(int id, std::string nama){
     nama_lokasi[id] = nama;
 }
 
-void tambah_jalur(int a, int b, int jarak){
-    jarak[a][b] = jarak;
-    jarak[a][b] = jarak;
+void tambah_jalur(int a, int b, int jarak_meter){
+    jarak[a][b] = jarak_meter;
+    jarak[a][b] = jarak_meter;
 }
 
 void siapkan_peta(){
@@ -26,31 +26,31 @@ void siapkan_peta(){
 }
 
 void data_lokasi(){
-    set_nama_lokasi("Praktek Faperta");
-    set_nama_lokasi("Gedung Mashudi");
-    set_nama_lokasi("Parkir Motor 1");
-    set_nama_lokasi("Gazebo");
-    set_nama_lokasi("Kantin");
-    set_nama_lokasi("UKM");
-    set_nama_lokasi("Saung Unper");
-    set_nama_lokasi("Mushola");
-    set_nama_lokasi("Hotel Unper");
-    set_nama_lokasi("Lab Farmasi");
-    set_nama_lokasi("Gedung PGSD, Farmasi, Faperta");
-    set_nama_lokasi("Kopma, Ormawa");
-    set_nama_lokasi("Parkir Motor 2");
-    set_nama_lokasi("Parkir Motor 1");
-    set_nama_lokasi("Bundaran");
-    set_nama_lokasi("Lab Komputer 1");
-    set_nama_lokasi("Lab Komputer 2");
-    set_nama_lokasi("Perpustakaan");
-    set_nama_lokasi("Lab Toufel & Budaya");
-    set_nama_lokasi("Parkir Mobil");
-    set_nama_lokasi("Gedung Sholihin");
-    set_nama_lokasi("Ruang Sajian Perhotelan");
-    set_nama_lokasi("Lapang Basket & Voli");
-    set_nama_lokasi("Lapang Unper");
-    set_nama_lokasi("Pos Satpam");
+    set_nama_lokasi(1, "Praktek Faperta");
+    set_nama_lokasi(2,"Gedung Mashudi");
+    set_nama_lokasi(3, "Parkir Motor 1");
+    set_nama_lokasi(4, "Gazebo");
+    set_nama_lokasi(5, "Kantin");
+    set_nama_lokasi(6, "UKM");
+    set_nama_lokasi(7, "Saung Unper");
+    set_nama_lokasi(8, "Mushola");
+    set_nama_lokasi(9, "Hotel Unper");
+    set_nama_lokasi(10, "Lab Farmasi");
+    set_nama_lokasi(11, "Gedung PGSD, Farmasi, Faperta");
+    set_nama_lokasi(12, "Kopma, Ormawa");
+    set_nama_lokasi(13,"Parkir Motor 2");
+    set_nama_lokasi(14, "Parkir Motor 1");
+    set_nama_lokasi(15, "Bundaran");
+    set_nama_lokasi(16, "Lab Komputer 1");
+    set_nama_lokasi(17, "Lab Komputer 2");
+    set_nama_lokasi(18, "Perpustakaan");
+    set_nama_lokasi(19, "Lab Toufel & Budaya");
+    set_nama_lokasi(20, "Parkir Mobil");
+    set_nama_lokasi(21, "Gedung Sholihin");
+    set_nama_lokasi(22, "Ruang Sajian Perhotelan");
+    set_nama_lokasi(23, "Lapang Basket & Voli");
+    set_nama_lokasi(24, "Lapang Unper");
+    set_nama_lokasi(25, "Pos Satpam");
 
     //Bagian Atas Kiri
     tambah_jalur(1,2,5);

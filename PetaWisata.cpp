@@ -1,4 +1,4 @@
-#include <iostream>
+#include <string>
 using namespace std;
 
 const int jumlah_lokasi = 25;

@@ -4,10 +4,10 @@ using namespace std;
 const int jumlah_lokasi = 25;
 const int hubung = 1;
 
-int jarak[ jumlah_lokasi + 1 ][ jumlah_lokasi + 1 ];
-std :: string nama_lokasi[jumlah_lokasi + 1];
+int jarak[jumlah_lokasi + 1][jumlah_lokasi + 1];
+string nama_lokasi[jumlah_lokasi + 1];
 
-void set_nama_lokasi(int id, std::string nama){
+void set_nama_lokasi(int id, string nama){
     nama_lokasi[id] = nama;
 }
 
@@ -27,7 +27,7 @@ void siapkan_peta(){
 
 void data_lokasi(){
     set_nama_lokasi(1, "Praktek Faperta");
-    set_nama_lokasi(2,"Gedung Mashudi");
+    set_nama_lokasi(2, "Gedung Mashudi");
     set_nama_lokasi(3, "Parkir Motor 1");
     set_nama_lokasi(4, "Gazebo");
     set_nama_lokasi(5, "Kantin");
@@ -38,7 +38,7 @@ void data_lokasi(){
     set_nama_lokasi(10, "Lab Farmasi");
     set_nama_lokasi(11, "Gedung PGSD, Farmasi, Faperta");
     set_nama_lokasi(12, "Kopma, Ormawa");
-    set_nama_lokasi(13,"Parkir Motor 2");
+    set_nama_lokasi(13, "Parkir Motor 2");
     set_nama_lokasi(14, "Parkir Motor 1");
     set_nama_lokasi(15, "Bundaran");
     set_nama_lokasi(16, "Lab Komputer 1");
@@ -118,6 +118,4 @@ void data_lokasi(){
     tambah_jalur(24, 25, 35);  // Lapang Unper -> Pos Satpam
     tambah_jalur(15, 25, 80);  // Bundaran -> Pos Satpam (jalur utama vertikal)
 }
-
-
 
